@@ -453,7 +453,8 @@
 
 .method private static d()Z
     .locals 1
-
+    const/4 v0, 0x0
+    return v0
     invoke-static {}, Lorg/npci/upi/security/pinactivitycomponent/d;->e()Z
 
     move-result v0
@@ -489,7 +490,8 @@
 
 .method private static e()Z
     .locals 2
-
+    const/4 v0, 0x0
+    return v0
     sget-object v0, Landroid/os/Build;->TAGS:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -515,7 +517,8 @@
 
 .method private static f()Z
     .locals 10
-
+    const/4 v0, 0x0
+    return v0
     const-string v0, "/system/app/Superuser.apk"
 
     const-string v1, "/sbin/su"
@@ -576,7 +579,8 @@
 
 .method private static g()Z
     .locals 6
-
+    const/4 v0, 0x0
+    return v0
     const/4 v0, 0x0
 
     const/4 v1, 0x0
