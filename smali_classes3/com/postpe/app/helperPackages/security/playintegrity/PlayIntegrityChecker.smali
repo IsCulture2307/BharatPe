@@ -27,27 +27,47 @@
 
 # direct methods
 .method public static a(Landroid/app/Application;JLkotlin/jvm/functions/Function4;)V
-    .registers 6
+    .locals 2
 
-    const/4 v0, 0x0                            # Integer errorCode = 0
-    const-string v1, "no-error"               # String errorMsg = "no-error"
-    const/4 v2, 0x1                            # Boolean checkPass = true
-    const-string v3, "token"                  # String token = "token"
+    sget-object p0, Lkotlinx/coroutines/Dispatchers;->a:Lkotlinx/coroutines/scheduling/DefaultScheduler;
 
-    invoke-interface {p3, v0, v1, v2, v3}, Lkotlin/jvm/functions/Function4;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    sget-object p0, Lkotlinx/coroutines/internal/MainDispatcherLoader;->a:Lkotlinx/coroutines/MainCoroutineDispatcher;
+
+    invoke-static {p0}, Lkotlinx/coroutines/CoroutineScopeKt;->a(Lkotlin/coroutines/CoroutineContext;)Lkotlinx/coroutines/internal/ContextScope;
+
+    move-result-object p0
+
+    new-instance v0, Lcom/postpe/app/helperPackages/security/playintegrity/PlayIntegrityChecker$initOnBlocking$1;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p1, p2, v1, p3}, Lcom/postpe/app/helperPackages/security/playintegrity/PlayIntegrityChecker$initOnBlocking$1;-><init>(JLkotlin/coroutines/Continuation;Lkotlin/jvm/functions/Function4;)V
+
+    const/4 p1, 0x3
+
+    invoke-static {p0, v1, v1, v0, p1}, Lkotlinx/coroutines/BuildersKt;->c(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;I)Lkotlinx/coroutines/Job;
 
     return-void
 .end method
 
 .method public static b(Landroid/app/Application;JLkotlin/jvm/functions/Function4;)V
-    .registers 6
+    .locals 2
 
-    const/4 v0, 0x0
-    const-string v1, "no-error"
-    const/4 v2, 0x1
-    const-string v3, "token"
+    sget-object p0, Lkotlinx/coroutines/Dispatchers;->b:Lkotlinx/coroutines/scheduling/DefaultIoScheduler;
 
-    invoke-interface {p3, v0, v1, v2, v3}, Lkotlin/jvm/functions/Function4;->invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p0}, Lkotlinx/coroutines/CoroutineScopeKt;->a(Lkotlin/coroutines/CoroutineContext;)Lkotlinx/coroutines/internal/ContextScope;
+
+    move-result-object p0
+
+    new-instance v0, Lcom/postpe/app/helperPackages/security/playintegrity/PlayIntegrityChecker$initTxn$1;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p1, p2, v1, p3}, Lcom/postpe/app/helperPackages/security/playintegrity/PlayIntegrityChecker$initTxn$1;-><init>(JLkotlin/coroutines/Continuation;Lkotlin/jvm/functions/Function4;)V
+
+    const/4 p1, 0x3
+
+    invoke-static {p0, v1, v1, v0, p1}, Lkotlinx/coroutines/BuildersKt;->c(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;I)Lkotlinx/coroutines/Job;
 
     return-void
 .end method
