@@ -540,7 +540,7 @@
 
     iput-object v1, v0, Lcom/postpe/app/helperPackages/postpeConfig/ConfigModel;->showSearchContactPageDeeplinkConsumer3_0:Ljava/lang/String;
 
-    const/4 v1, 0x1
+    const/4 v1, 0x0
 
     iput-boolean v1, v0, Lcom/postpe/app/helperPackages/postpeConfig/ConfigModel;->paymentFLow:Z
 
@@ -610,7 +610,7 @@
 
     new-instance v5, Lcom/postpe/app/helperPackages/postpeConfig/RootDetectionConfiguration;
 
-    sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    sget-object v1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
     invoke-direct {v5, v1, v1}, Lcom/postpe/app/helperPackages/postpeConfig/RootDetectionConfiguration;-><init>(Ljava/lang/Boolean;Ljava/lang/Boolean;)V
 
