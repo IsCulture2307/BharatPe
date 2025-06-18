@@ -34,7 +34,8 @@
 
 .method public static final a()Z
     .locals 6
-
+    const/4 v0, 0x0
+    return v0
     const/4 v0, 0x0
 
     :try_start_0
@@ -162,7 +163,8 @@
 
 .method public static final b()Z
     .locals 5
-
+    const/4 v0, 0x0
+    return v0
     const/4 v0, 0x0
 
     :try_start_0
@@ -277,7 +279,8 @@
 
 .method public static final c()Z
     .locals 16
-
+    const/4 v0, 0x0
+    return v0
     const-string v0, "/system/xbin/su"
 
     const-string v1, "/system/bin/su"
@@ -363,7 +366,8 @@
 
 .method public static final d(Landroid/content/Context;)Z
     .locals 2
-
+    const/4 v0, 0x0
+    return v0
     sget-object v0, Lcom/bharatpe/rootdetection/GetSpeakerCheck;->a:Ljava/util/List;
 
     const-string v0, "context"
@@ -408,7 +412,8 @@
 
 .method public static final e()Z
     .locals 4
-
+    const/4 v0, 0x0
+    return v0
     const/4 v0, 0x0
 
     :try_start_0
@@ -526,7 +531,8 @@
 
 .method public static final f()Z
     .locals 3
-
+    const/4 v0, 0x0
+    return v0
     :try_start_0
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
@@ -621,6 +627,9 @@
 
 .method public static final g(Landroid/content/Context;)Z
     .locals 7
+    const/4 v0, 0x0
+    return v0
+    :try_start_0
 
     const-string v0, "activity"
 
@@ -1015,7 +1024,8 @@
 
 .method public static l(Landroid/content/Context;)Z
     .locals 1
-
+    const/4 v0, 0x0
+    return v0
     const-string v0, "context"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
