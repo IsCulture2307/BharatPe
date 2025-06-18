@@ -113,5 +113,7 @@
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
     :catch_0
+
+    :goto_0
     return-void
 .end method

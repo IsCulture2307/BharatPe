@@ -113,18 +113,6 @@
     return-void
 
     :pswitch_6
-    return-void
-    sget v0, Lcom/postpe/app/appUseCases/common/SplashActivity;->u:I
-
-    invoke-static {}, Landroid/os/Process;->myPid()I
-
-    move-result v0
-
-    invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
-
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Ljava/lang/System;->exit(I)V
 
     return-void
 

@@ -25,7 +25,6 @@
 # virtual methods
 .method public final run()V
     .locals 3
-    return-void
 
     const-string v0, "this$0"
 
@@ -40,22 +39,6 @@
     move-result-object v0
 
     const/4 v2, 0x1
-
-    invoke-static {v1, v0, v2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/widget/Toast;->show()V
-
-    invoke-static {}, Landroid/os/Process;->myPid()I
-
-    move-result v0
-
-    invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
-
-    const/4 v0, 0x0
-
-    invoke-static {v0}, Ljava/lang/System;->exit(I)V
 
     return-void
 .end method
