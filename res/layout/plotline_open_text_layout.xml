@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/open_text_layout" style="@style/plotline_modal_outer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/plotline_part_layout_close" />
+    <LinearLayout style="@style/plotline_modal_inner"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include layout="@layout/plotline_part_layout_question" />
+        <EditText android:textSize="16.0sp" android:textColor="@color/plotline_option_text" android:textColorHint="@color/plotline_description" android:gravity="start|center|top" android:id="@id/open_text" android:background="@drawable/plotline_textbg" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="10.0dip" android:text="" android:hint="I think that..." android:lines="8" android:minLines="4" android:inputType="textMultiLine" />
+        <include layout="@layout/plotline_part_layout_submit_button" />
+        <include layout="@layout/plotline_part_layout_progress" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.postpe.app.helperPackages.customviews.LoaderContainerView android:id="@id/parent_lcv" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/web_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="60.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@id/header_back_iv" android:layout_width="48.0dip" android:layout_height="fill_parent" android:paddingHorizontal="12.0dip" app:srcCompat="@drawable/arrow_back" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/textColorPrimary" android:id="@id/heading_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/poppins_bold" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <com.postpe.app.helperPackages.customviews.BpWebViewWrapper android:id="@id/feed_view" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/web_header" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <FrameLayout android:id="@id/hyper_sdk_fl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.postpe.app.helperPackages.customviews.LoaderContainerView>

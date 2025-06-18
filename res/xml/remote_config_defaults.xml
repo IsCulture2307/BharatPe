@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>js_bundle_url</key>
+        <value>https://example.com/default_bundle.js</value>
+    </entry>
+</defaultsMap>

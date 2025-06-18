@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/line" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="2.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/img_card_logo" android:layout_width="@dimen/dp37" android:layout_height="@dimen/dp37" android:layout_marginLeft="@dimen/dp20" android:src="@drawable/card_small_logo" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/img_card_logo" app:layout_constraintEnd_toStartOf="@id/img_arrow_logo" app:layout_constraintHorizontal_bias="0.05" app:layout_constraintStart_toEndOf="@id/img_card_logo" app:layout_constraintTop_toTopOf="@id/img_card_logo">
+        <TextView android:textSize="@dimen/sp14" android:textColor="@color/black" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/notosans_bold" />
+        <TextView android:textSize="@dimen/sp12" android:textColor="@color/black" android:id="@id/tv_available_limit" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:id="@id/img_arrow_logo" android:layout_width="@dimen/dp37" android:layout_height="@dimen/dp37" android:layout_marginTop="@dimen/dp20" android:layout_marginRight="@dimen/dp20" android:layout_marginBottom="@dimen/dp20" android:src="@drawable/arrow_right_small" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

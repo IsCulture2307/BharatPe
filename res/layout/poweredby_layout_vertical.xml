@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/walk_powered_by_section" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="10.0sp" android:textColor="@color/white_2" android:id="@id/walk_powered_by" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/powered_by" android:fontFamily="@font/poppins_regular" android:textAlignment="center" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/upi_logo_bp" />
+</LinearLayout>

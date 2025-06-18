@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="16.0dip" android:paddingVertical="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:layout_gravity="center_horizontal" android:background="@drawable/background_bar" android:layout_width="60.0dip" android:layout_height="5.0dip" />
+        <ImageView android:layout_gravity="right" android:id="@id/btn_close" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_close_black" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/textSizeExtraLarge" android:textColor="@color/textColorPrimary" android:id="@id/tv_permission_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:fontFamily="@font/poppins_bold" />
+    <TextView android:textSize="@dimen/textSizeMedium" android:textColor="@color/textColorPrimary" android:id="@id/tv_permission_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" />
+    <Button android:id="@id/btn_grant_permission" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:text="@string/grant_permission" style="@style/PrimaryButtonTheme" />
+</LinearLayout>

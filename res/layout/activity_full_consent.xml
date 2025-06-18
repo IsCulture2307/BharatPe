@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/InvoidAppTheme.AppBarOverlay" android:id="@id/toolbar" android:background="@color/invoidActionBarColor" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:elevation="4.0dip" app:popupTheme="@style/InvoidAppTheme.PopupOverlay" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/toolbar">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="Terms And Condition" android:layout_marginStart="16.0dip" />
+        <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="16.0dip" android:layout_weight="1.0" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip">
+            <TextView android:id="@id/terms_and_condition_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/invoid_terms_conditions" />
+        </ScrollView>
+        <Button android:textColor="@android:color/white" android:id="@id/continue_button" android:background="@drawable/invoid_button_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="40.0dip" android:text="Accept and proceed" />
+    </LinearLayout>
+</RelativeLayout>

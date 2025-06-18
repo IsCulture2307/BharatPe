@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout android:id="@id/gridLayoutKeyboard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:rowCount="4" android:columnCount="3"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.postpe.app.helperPackages.keyboard.BorderTextView android:text="@string/key_1" app:borderBottom="true" app:borderLeft="true" app:borderRight="true" app:borderTop="true" style="@style/KeyboardButton" />
+    <com.postpe.app.helperPackages.keyboard.BorderTextView android:text="@string/key_2" app:borderBottom="true" app:borderLeft="false" app:borderRight="true" app:borderTop="true" style="@style/KeyboardButton" />
+    <com.postpe.app.helperPackages.keyboard.BorderTextView android:text="@string/key_3" app:borderBottom="true" app:borderLeft="false" app:borderRight="true" app:borderTop="true" style="@style/KeyboardButton" />
+    <com.postpe.app.helperPackages.keyboard.BorderTextView android:text="@string/key_4" app:borderBottom="true" app:borderLeft="true" app:borderRight="true" app:borderTop="false" style="@style/KeyboardButton" />
+    <com.postpe.app.helperPackages.keyboard.BorderTextView android:text="@string/key_5" app:borderBottom="true" app:borderLeft="false" app:borderRight="true" app:borderTop="false" style="@style/KeyboardButton" />
+    <com.postpe.app.helperPackages.keyboard.BorderTextView android:text="@string/key_6" app:borderBottom="true" app:borderLeft="false" app:borderRight="true" app:borderTop="false" style="@style/KeyboardButton" />
+    <com.postpe.app.helperPackages.keyboard.BorderTextView android:text="@string/key_7" app:borderBottom="true" app:borderLeft="true" app:borderRight="true" app:borderTop="false" style="@style/KeyboardButton" />
+    <com.postpe.app.helperPackages.keyboard.BorderTextView android:text="@string/key_8" app:borderBottom="true" app:borderLeft="false" app:borderRight="true" app:borderTop="false" style="@style/KeyboardButton" />
+    <com.postpe.app.helperPackages.keyboard.BorderTextView android:text="@string/key_9" app:borderBottom="true" app:borderLeft="false" app:borderRight="true" app:borderTop="false" style="@style/KeyboardButton" />
+    <com.postpe.app.helperPackages.keyboard.BorderTextView android:textSize="22.0sp" android:text="@string/key_dot" app:borderBottom="false" app:borderLeft="false" app:borderRight="true" app:borderTop="false" style="@style/KeyboardButton" />
+    <com.postpe.app.helperPackages.keyboard.BorderTextView android:text="@string/key_0" app:borderBottom="true" app:borderLeft="false" app:borderRight="true" app:borderTop="false" style="@style/KeyboardButton" />
+    <com.postpe.app.helperPackages.keyboard.BorderTextView android:textSize="22.0sp" android:id="@id/crossButton" android:text="@string/key_backspace" app:borderBottom="false" app:borderLeft="false" app:borderRight="false" app:borderTop="false" style="@style/KeyboardButton" />
+</GridLayout>

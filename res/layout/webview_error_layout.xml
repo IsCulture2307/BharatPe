@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/webview_error_layout" android:background="@color/bg_grey" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/err_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:src="@drawable/error_lamp_robot" android:layout_above="@id/text1" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/textColorPrimary" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/page_not_fount_title" android:layout_centerInParent="true" android:fontFamily="@font/lato_bold" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/textColorSecondary" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/page_not_fount_description" android:layout_below="@id/text1" android:layout_centerHorizontal="true" android:fontFamily="@font/lato_regular" android:layout_marginHorizontal="10.0dip" />
+    <Button android:id="@id/retry" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Retry" android:layout_alignParentBottom="true" android:textAllCaps="false" android:layout_marginHorizontal="20.0dip" />
+</RelativeLayout>

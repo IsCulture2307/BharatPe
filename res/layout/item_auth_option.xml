@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sim_container" android:background="@drawable/new_bg_rounded_primary" android:layout_width="fill_parent" android:layout_height="54.0dip" android:layout_marginHorizontal="20.0dip" android:layout_marginVertical="12.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/option_icon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginStart="10.0dip" app:srcCompat="@drawable/ic_arrow_right" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/black_1" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_auth_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_margin="13.0dip" android:drawablePadding="8.0dip" android:layout_weight="1.0" android:fontFamily="@font/lato_bold" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="16.0dip" app:srcCompat="@drawable/ic_arrow_right" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

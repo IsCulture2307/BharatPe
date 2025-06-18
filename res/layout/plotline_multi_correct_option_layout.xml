@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/ll_option" android:background="@drawable/plotline_optionbg" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:minHeight="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/option_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" />
+    <CheckBox android:layout_gravity="center" android:id="@id/checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:layout_marginBottom="-8.0dip" android:checked="false" android:scaleX="0.7" android:scaleY="0.7" android:buttonTint="@color/plotline_option_text" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/plotline_option_text" android:layout_gravity="center" android:id="@id/option_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Difficult to setup" />
+</LinearLayout>

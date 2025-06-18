@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.postpe.app.helperPackages.customviews.LoaderContainerView android:id="@id/parent_lcv" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.postpe.app.helperPackages.customviews.BpWebViewWrapper android:id="@id/third_party_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/hyper_sdk_fl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.postpe.app.helperPackages.customviews.LoaderContainerView>

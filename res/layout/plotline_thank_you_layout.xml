@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/thank_you_layout" style="@style/plotline_modal_inner"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/thank_you_imgv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="0.0dip" app:srcCompat="@drawable/plotline_ic_check" />
+    <TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="@color/plotline_title" android:layout_gravity="center" android:id="@id/thank_you_screen_text" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="Thanks for your input!" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/plotline_description" android:layout_gravity="center" android:id="@id/plotline" android:paddingTop="16.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Powered by Plotline" />
+</LinearLayout>

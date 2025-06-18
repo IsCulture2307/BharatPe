@@ -1,0 +1,19 @@
+.class public interface abstract Lcom/google/common/base/FinalizableReference;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Lcom/google/common/annotations/GwtIncompatible;
+.end annotation
+
+.annotation runtime Lcom/google/common/base/ElementTypesAreNonnullByDefault;
+.end annotation
+
+.annotation runtime Lcom/google/errorprone/annotations/DoNotMock;
+.end annotation
+
+
+# virtual methods
+.method public abstract a()V
+.end method

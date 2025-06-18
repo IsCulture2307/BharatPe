@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="?android:selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingVertical="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/imageSection" android:background="@drawable/ic_circle_bg_enabled" android:layout_width="44.0dip" android:layout_height="44.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_phone_small" />
+    </LinearLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/textColorPrimary" android:id="@id/displayName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="online \ntransaction" android:includeFontPadding="false" android:fontFamily="@font/poppins_medium" android:textAlignment="center" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/imageSection" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/black_2" android:id="@id/status" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="ACTIVE" android:includeFontPadding="false" android:fontFamily="@font/poppins_bold" android:textAlignment="center" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/displayName" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="16.0dip" android:text="Edit api urls" android:textIsSelectable="true" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/view_custom_urls" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <Button android:textSize="17.0sp" android:textColor="@color/white" android:layout_gravity="bottom" android:id="@id/btn_apply_custom_urls" android:background="@drawable/btn_theme" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_margin="16.0dip" android:text="SAVE" android:fontFamily="@font/poppins_bold" android:paddingHorizontal="32.0dip" style="?android:borderlessButtonStyle" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

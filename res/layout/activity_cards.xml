@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.postpe.app.helperPackages.customviews.LoaderContainerView android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:background="@color/white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="40.0dip">
+        <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="50.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/card_header" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+                <ImageView android:id="@id/back_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="12.0dip" android:paddingVertical="24.0dip" app:srcCompat="@drawable/ic_back_black" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/black_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/your_postpe_card" android:includeFontPadding="false" android:fontFamily="@font/poppins_regular" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/card_parent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="20.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/card_header" />
+            <ImageView android:id="@id/cardBanner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginHorizontal="20.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/card_parent" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/cardSettingView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginHorizontal="20.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cardBanner">
+                <TextView android:textSize="21.0sp" android:textColor="@color/black_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card" android:fontFamily="@font/poppins_light" />
+                <TextView android:textSize="21.0sp" android:textColor="@color/black_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/settings_2" android:fontFamily="@font/poppins_semibold" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView android:id="@id/cardStatusList" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cardSettingView" />
+            <LinearLayout android:gravity="center" android:id="@id/setPinSection" android:background="@drawable/bg_rounded_primary" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="44.0dip" android:layout_marginTop="24.0dip" android:layout_marginStart="20.0dip" android:paddingHorizontal="20.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cardStatusList">
+                <ImageView android:id="@id/setPinImage" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_reset" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/textColor2" android:id="@id/setPinText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SET CARD PIN" android:includeFontPadding="false" android:fontFamily="@font/poppins_bold" android:layout_marginStart="8.0dip" />
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+        <TextView android:textSize="16.0sp" android:id="@id/powered_by_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/powered_by" android:fontFamily="@font/poppins_regular" android:layout_marginEnd="8.0dip" />
+        <ImageView android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/zeta_services_logo" />
+    </LinearLayout>
+</com.postpe.app.helperPackages.customviews.LoaderContainerView>

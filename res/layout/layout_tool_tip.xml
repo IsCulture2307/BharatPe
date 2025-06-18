@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="horizontal" android:background="@drawable/bg_tool_tip" android:paddingBottom="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/sp12" android:textColor="@color/colorPrimary" android:id="@id/tooltip_text" android:paddingTop="@dimen/dp6" android:paddingBottom="@dimen/dp8" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" android:fontFamily="@font/notosans_medium" android:paddingStart="@dimen/dp10" android:layout_toStartOf="@id/tooltip_close" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/tooltip_close" android:padding="@dimen/dp8" android:layout_width="@dimen/dp24" android:layout_height="@dimen/dp26" android:src="@drawable/orange_close" android:scaleType="center" android:translationY="-2.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/tooltip_text" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/colorBg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="16.0dip" app:layout_constraintBottom_toTopOf="@id/footer" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="24.0sp" android:textColor="@color/textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select Language" android:fontFamily="@font/poppins_bold" />
+        <TextView android:textSize="@dimen/textSizeSmall" android:textColor="@color/textColorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="Preferred Language / भाषा चुनिए" android:fontFamily="@font/poppins_bold" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_languages" android:background="@drawable/bg_rounded_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/footer" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent">
+        <Button android:id="@id/btn_continue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Continue" android:layout_marginHorizontal="16.0dip" android:layout_marginVertical="4.0dip" style="@style/PrimaryButtonTheme" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

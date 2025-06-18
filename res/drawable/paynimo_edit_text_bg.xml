@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/paynimo_listDividerColor">
+        <shape android:padding="5.0dip" android:shape="rectangle" android:thickness="5.0dip" />
+    </item>
+    <item android:drawable="@color/editTextBackgroundColor" android:left="3.0dip" android:top="3.0dip" android:right="3.0dip" android:bottom="3.0dip">
+        <shape android:shape="rectangle" />
+    </item>
+    <item android:gravity="center|left" android:drawable="@drawable/ic_menu_search_holo_light" android:left="8.0dip" android:top="5.0dip" android:right="5.0dip" android:bottom="5.0dip" />
+</layer-list>

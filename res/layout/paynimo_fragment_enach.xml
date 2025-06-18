@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip">
+        <com.paynimo.android.payment.CustomTextView android:id="@id/paynimo_text_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Account Type" android:layout_alignParentLeft="true" android:layout_centerInParent="true" style="@style/TextViewPaynimo" />
+        <Spinner android:id="@id/paynimo_spn_account_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/paynimo_text_type" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.6">
+            <com.paynimo.android.payment.CustomTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Aadhar Number" style="@style/TextViewPaynimo" />
+            <com.paynimo.android.payment.CustomEditText android:id="@id/paynimo_et_aadhar_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter Aadhar No" android:maxLength="14" android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="0.4">
+            <TextView android:textSize="14.0sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Customer Name" android:fontFamily="@font/poppins_light" />
+            <EditText android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/paynimo_et_account_holder_name" android:background="@null" android:nextFocusDown="@id/paynimo_et_account_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter Account Holder Name" android:inputType="text" android:fontFamily="@font/poppins_regular" android:textAlignment="textEnd" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_weight="0.6">
+            <TextView android:textSize="14.0sp" android:textColor="#ff686868" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A/c Number" android:fontFamily="@font/poppins_light" />
+            <EditText android:textSize="14.0sp" android:textColor="@color/black" android:id="@id/paynimo_et_account_number" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter Account No" android:inputType="number" android:fontFamily="@font/poppins_regular" android:textAlignment="textEnd" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/paynimo_lyt_enach_rdo_group" android:paddingBottom="15.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <View android:background="#fff2faf6" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/colorPrimary" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:text="@string/paynimo_choose_method" android:fontFamily="@font/poppins_medium" />
+        </RelativeLayout>
+        <RadioGroup android:orientation="horizontal" android:id="@id/paynimo_rg_enach_modes" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="20.0dip">
+            <RadioButton android:id="@id/paynimo_rdo_netbanking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Netbanking" android:layout_weight="0.5" />
+            <RadioButton android:id="@id/paynimo_rdo_debit_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Debit Card" android:layout_weight="0.5" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/paynimo_lyt_bank_details" android:background="@drawable/paynimo_view_rounded_corner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <com.paynimo.android.payment.CustomTextView android:textStyle="bold" android:textColor="@color/defaultTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bank:" style="@style/TextViewSmallPaynimo" />
+            <com.paynimo.android.payment.CustomTextView android:id="@id/paynimo_bank_name" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextViewSmallPaynimo" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <com.paynimo.android.payment.CustomTextView android:textStyle="bold" android:textColor="@color/defaultTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Address:" style="@style/TextViewSmallPaynimo" />
+            <com.paynimo.android.payment.CustomTextView android:id="@id/paynimo_bank_address" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextViewSmallPaynimo" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <com.paynimo.android.payment.CustomTextView android:textStyle="bold" android:textColor="@color/defaultTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Branch:" style="@style/TextViewSmallPaynimo" />
+            <com.paynimo.android.payment.CustomTextView android:id="@id/paynimo_bank_branch" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextViewSmallPaynimo" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <com.paynimo.android.payment.CustomTextView android:textStyle="bold" android:textColor="@color/defaultTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="District:" style="@style/TextViewSmallPaynimo" />
+            <com.paynimo.android.payment.CustomTextView android:id="@id/paynimo_bank_district" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextViewSmallPaynimo" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <com.paynimo.android.payment.CustomTextView android:textStyle="bold" android:textColor="@color/defaultTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="State:" style="@style/TextViewSmallPaynimo" />
+            <com.paynimo.android.payment.CustomTextView android:id="@id/paynimo_bank_state" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextViewSmallPaynimo" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <com.paynimo.android.payment.CustomTextView android:textStyle="bold" android:textColor="@color/defaultTextColor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="MICR Code:" style="@style/TextViewSmallPaynimo" />
+            <com.paynimo.android.payment.CustomTextView android:id="@id/paynimo_bank_micr" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextViewSmallPaynimo" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <com.paynimo.android.payment.CustomTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Phone No." style="@style/TextViewPaynimo" />
+            <com.paynimo.android.payment.CustomEditText android:id="@id/paynimo_et_phone_number" android:nextFocusDown="@id/paynimo_et_mobile_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter Phone No" android:maxLength="15" android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="0.5">
+            <com.paynimo.android.payment.CustomTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Mobile No." style="@style/TextViewPaynimo" />
+            <com.paynimo.android.payment.CustomEditText android:id="@id/paynimo_et_mobile_number" android:nextFocusDown="@id/paynimo_et_pan_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter Mobile No." android:maxLength="10" android:inputType="phone" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+            <com.paynimo.android.payment.CustomTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="PAN No." style="@style/TextViewPaynimo" />
+            <com.paynimo.android.payment.CustomEditText android:id="@id/paynimo_et_pan_number" android:nextFocusDown="@id/paynimo_et_email_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter PAN No." android:maxLength="10" android:digits="0123456789QWERTZUIOPASDFGHJKLYXCVBNM" android:inputType="textCapCharacters" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_weight="0.5">
+            <com.paynimo.android.payment.CustomTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Email ID" style="@style/TextViewPaynimo" />
+            <com.paynimo.android.payment.CustomEditText android:id="@id/paynimo_et_email_id" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Enter Email ID" android:inputType="textEmailAddress" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.paynimo.android.payment.CustomTextView android:id="@id/paynimo_bank_error_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/TextViewPaynimo" />
+</LinearLayout>

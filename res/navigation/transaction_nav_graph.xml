@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/transaction_nav_graph" app:startDestination="@id/paymentPageFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="Payment Page" android:name="com.postpe.app.appUseCases.transaction.paymentPage.ui.fragments.PaymentPageFragment" android:id="@id/paymentPageFragment">
+        <action android:id="@id/action_paymentPageFragment_to_paymentLoaderFragment" app:destination="@id/paymentLoaderFragment" />
+    </fragment>
+    <fragment android:label="Payment Loader" android:name="com.postpe.app.appUseCases.transaction.paymentLoader.PaymentLoaderFragment" android:id="@id/paymentLoaderFragment">
+        <action android:id="@id/action_paymentLoaderFragment_to_paymentStatusFragment" app:destination="@id/paymentStatusFragment" />
+    </fragment>
+    <fragment android:label="Payment Status" android:name="com.postpe.app.appUseCases.transaction.paymentLoader.PaymentStatusFragment" android:id="@id/paymentStatusFragment" />
+</navigation>

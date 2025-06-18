@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/plotline_multi_choice_multi_correct_layout" style="@style/plotline_modal_outer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/plotline_part_layout_close" />
+    <LinearLayout style="@style/plotline_modal_inner">
+        <include layout="@layout/plotline_part_layout_question" />
+        <LinearLayout android:orientation="vertical" android:id="@id/options_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include layout="@layout/plotline_part_layout_submit_button" />
+        <include layout="@layout/plotline_part_layout_progress" />
+    </LinearLayout>
+</LinearLayout>

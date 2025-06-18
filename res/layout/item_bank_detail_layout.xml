@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/bank_details" android:padding="15.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/bank_type" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/bank_logo" android:padding="10.0dip" android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/ic_sample_bank_logo" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:layout_toEndOf="@id/bank_logo">
+            <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/bank_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" android:fontFamily="@font/lato_regular" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/account_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:fontFamily="@font/lato_regular" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/account_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:fontFamily="@font/lato_regular" />
+            <com.facebook.shimmer.ShimmerFrameLayout android:id="@id/shimmer_container" android:visibility="gone" android:layout_width="140.0dip" android:layout_height="15.0dip" android:layout_marginTop="10.0dip" app:shimmer_auto_start="false" app:shimmer_direction="left_to_right" app:shimmer_duration="500">
+                <TextView android:textColor="@android:color/transparent" android:id="@id/item_text_view" android:background="@color/grey_1" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </com.facebook.shimmer.ShimmerFrameLayout>
+            <TextView android:textSize="12.0sp" android:textColor="@color/blue_bharatpe_theme" android:id="@id/tv_balance" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="CHECK BALANCE" android:fontFamily="@font/lato_regular" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/blue_bharatpe_theme" android:id="@id/tv_due_balance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:fontFamily="@font/lato_regular" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_radio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_unchecked_radio" android:layout_alignParentEnd="true" />
+        <ImageView android:id="@id/img_upi_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:src="@drawable/upi_logo_bp" android:layout_below="@id/iv_radio" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/black" android:gravity="center" android:id="@id/bank_type" android:background="@color/green" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:fontFamily="@font/lato_bold" android:paddingVertical="3.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/bank_details" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView android:id="@id/zxing_barcode_scanner" android:layout_width="fill_parent" android:layout_height="fill_parent" app:zxing_scanner_layout="@layout/custom_barcode_scanner" />
+    <View android:background="@drawable/bg_rounded_primary_transparent" android:layout_width="247.0dip" android:layout_height="244.0dip" android:layout_marginBottom="120.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <include android:id="@id/walk_powered_by_section" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="190.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" layout="@layout/poweredby_layout_vertical" />
+    <LinearLayout android:gravity="center" android:id="@id/flashlight_section" android:background="@drawable/bg_rounded_flash" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="35.0dip" android:layout_centerHorizontal="true" android:alpha="0.7" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/walk_powered_by_section">
+        <ImageView android:id="@id/flashlight_off" android:layout_width="35.0dip" android:layout_height="35.0dip" app:srcCompat="@drawable/ic_flash_on" />
+        <ImageView android:id="@id/flashlight_on" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" app:srcCompat="@drawable/ic_flash_off" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/backImageContainer" android:layout_width="60.0dip" android:layout_height="65.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <ImageView android:id="@id/backImage" android:layout_width="8.0dip" android:layout_height="14.0dip" app:srcCompat="@drawable/ic_back_white" />
+    </LinearLayout>
+    <TextView android:textSize="18.0sp" android:textColor="#ffeeeeee" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="@string/scan_your_upi_code_to_pay" android:includeFontPadding="false" android:fontFamily="@font/poppins_medium" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/backImageContainer" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

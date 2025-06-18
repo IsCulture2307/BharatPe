@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/rating_layout" style="@style/plotline_modal_outer"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/plotline_part_layout_close" />
+    <LinearLayout style="@style/plotline_modal_inner">
+        <include layout="@layout/plotline_part_layout_question" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_ratings" android:background="@drawable/plotline_optionbg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+        <LinearLayout android:id="@id/ll_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+            <TextView android:textSize="16.0sp" android:textColor="@color/plotline_option_text" android:id="@id/low_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Bad" android:layout_weight="1.0" />
+            <Space android:layout_width="10.0dip" android:layout_height="wrap_content" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/plotline_option_text" android:gravity="end" android:id="@id/high_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Good" android:layout_weight="1.0" />
+        </LinearLayout>
+        <include layout="@layout/plotline_part_layout_progress" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/bg_grey" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/separator" android:background="#ffd1d3d4" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_marginTop="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout android:gravity="top" android:id="@id/imageSection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/separator">
+        <LinearLayout android:gravity="center" android:id="@id/iv_container" android:layout_width="36.0dip" android:layout_height="36.0dip">
+            <ImageView android:id="@id/permissionImage" android:layout_width="32.0dip" android:layout_height="32.0dip" app:srcCompat="@drawable/ic_smartphone" />
+        </LinearLayout>
+        <ImageView android:id="@id/permissionDeniedImage" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" />
+    </LinearLayout>
+    <TextView android:textSize="16.0sp" android:textColor="@color/textColor2" android:id="@id/permissionTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:textAllCaps="false" android:fontFamily="@font/lato_bold" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toBottomOf="@id/imageSection" />
+    <ImageView android:id="@id/switchImage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/imageSection" app:srcCompat="@drawable/ic_switch_enabled" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/text_subtle" android:id="@id/permissionDescription" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/std_margin_5dp" android:fontFamily="@font/lato_regular" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/permissionTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

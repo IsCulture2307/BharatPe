@@ -1,0 +1,15 @@
+.class Landroidx/browser/browseractions/BrowserActionsFallbackMenuDialog$1;
+.super Landroid/animation/AnimatorListenerAdapter;
+.source "SourceFile"
+
+
+# virtual methods
+.method public final onAnimationEnd(Landroid/animation/Animator;)V
+    .locals 0
+
+    const/4 p1, 0x0
+
+    invoke-static {p1}, Landroidx/browser/browseractions/BrowserActionsFallbackMenuDialog;->a(Landroidx/browser/browseractions/BrowserActionsFallbackMenuDialog;)V
+
+    throw p1
+.end method

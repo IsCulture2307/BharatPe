@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path name="my_images" path="Android/data/com.postpe.app/files/Pictures" />
+    <external-path name="postpe_external_images" path="." />
+    <files-path name="postpe_pdf" path="PDFs/" />
+    <files-path name="postpe_image" path="SharedImages" />
+    <files-path name="postpe_web_sharing" path="WebSharing" />
+</paths>

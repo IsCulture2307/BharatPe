@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" app:cardBackgroundColor="@android:color/white" app:cardCornerRadius="8.0dip" app:cardElevation="4.0dip" app:cardPreventCornerOverlap="true" app:cardUseCompatPadding="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/plotline_rounded_card" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:layout_width="80.0dip" android:layout_height="15.0dip" android:layout_marginBottom="8.0dip" android:src="@drawable/plotline_logo_small" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/plotline_rounded_card_white" android:padding="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0.0dip">
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center" android:id="@id/plotlinefloatingbutton_screen_name" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:text="a:MainActivity" android:maxLines="1" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/plotlinefloatingbutton_capture_button" android:background="@drawable/plotline_rounded_button" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/plotline_camera" />
+                <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Capture screen" android:textAlignment="center" />
+            </LinearLayout>
+            <TextView android:textSize="14.0sp" android:textColor="#ffff3b30" android:gravity="center" android:id="@id/plotlinefloatingbutton_cancel_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Stop capturing" android:textFontWeight="500" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

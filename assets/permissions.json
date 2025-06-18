@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Device",
+    "description": "Our app collects and transmits your device data to BharatPe servers for linking your device to your BharatPe account.",
+    "icon": "",
+    "isGranted": "False"
+  },
+  {
+    "name": "SMS (send/read)",
+    "description": "Our app collects SMS data to assess your profile for various BharatPe products and/or services, including those offered in partnership with lending partners and other financial services providers. Additionally, send SMS access is required to verify your phone number and other verification purposes.This data may be collected even when the app is closed or not in use.",
+    "icon": "",
+    "isGranted": "False"
+  },
+  {
+    "name": "Location",
+    "description": "Our app collects location permission to determine availability of BharatPe products in your region/area, provide region specific offers and promotions and for performing fraud and risk checks.",
+    "icon": "",
+    "isGranted": "False"
+  },
+  {
+    "name": "Installed applications",
+    "description": "Our app collects, installed applications data from your device which includes application name and package name to assess your eligibility for various BharatPe products and/or services, including those offered in partnership with lending partners and other financial services providers.",
+    "icon": "",
+    "isGranted": "True"
+  }
+]
