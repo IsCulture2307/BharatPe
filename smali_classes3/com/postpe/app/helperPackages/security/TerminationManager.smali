@@ -30,6 +30,6 @@
 
 # direct methods
 .method public static a(Landroid/content/ContextWrapper;Ljava/lang/String;)V
-    .registers 0
+    .registers 2
     return-void
 .end method
