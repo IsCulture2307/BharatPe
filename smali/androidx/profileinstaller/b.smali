@@ -92,21 +92,8 @@
     goto :goto_1
 
     :cond_1
-    invoke-static {}, Landroid/os/Process;->myPid()I
 
-    move-result v0
-
-    invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
-
-    invoke-static {v1}, Ljava/lang/System;->exit(I)V
-
-    new-instance v0, Ljava/lang/RuntimeException;
-
-    const-string v1, "System.exit returned normally, while it was supposed to halt JVM."
-
-    invoke-direct {v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
-
-    throw v0
+    return-void
 
     :pswitch_0
     new-instance v0, Landroidx/arch/core/executor/a;

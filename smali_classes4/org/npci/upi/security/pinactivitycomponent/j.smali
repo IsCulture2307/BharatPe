@@ -40,11 +40,11 @@
 
     invoke-virtual {p1}, Ljava/io/StringWriter;->toString()Ljava/lang/String;
 
-    invoke-static {}, Landroid/os/Process;->myPid()I
+    #invoke-static {}, Landroid/os/Process;->myPid()I
 
-    move-result p1
+    #move-result p1
 
-    invoke-static {p1}, Landroid/os/Process;->killProcess(I)V
+    #invoke-static {p1}, Landroid/os/Process;->killProcess(I)V
 
     return-void
 .end method

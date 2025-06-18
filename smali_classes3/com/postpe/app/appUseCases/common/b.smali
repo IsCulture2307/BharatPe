@@ -25,6 +25,7 @@
 # virtual methods
 .method public final run()V
     .locals 3
+    return-void
 
     const-string v0, "this$0"
 

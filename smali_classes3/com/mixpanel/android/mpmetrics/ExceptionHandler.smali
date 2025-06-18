@@ -82,6 +82,7 @@
 # virtual methods
 .method public final uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
     .locals 1
+    return-void
 
     new-instance v0, Lcom/mixpanel/android/mpmetrics/ExceptionHandler$1;
 
@@ -112,16 +113,5 @@
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
     :catch_0
-    invoke-static {}, Landroid/os/Process;->myPid()I
-
-    move-result p1
-
-    invoke-static {p1}, Landroid/os/Process;->killProcess(I)V
-
-    const/16 p1, 0xa
-
-    invoke-static {p1}, Ljava/lang/System;->exit(I)V
-
-    :goto_0
     return-void
 .end method

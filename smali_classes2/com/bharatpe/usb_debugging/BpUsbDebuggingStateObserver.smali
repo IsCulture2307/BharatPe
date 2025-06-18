@@ -40,6 +40,8 @@
 
 # virtual methods
 .method public final a()Z
+    const/4 v0, 0x0
+    return v0
     .locals 3
 
     iget-object v0, p0, Lcom/bharatpe/usb_debugging/BpUsbDebuggingStateObserver;->a:Landroid/content/Context;
