@@ -764,6 +764,7 @@
 
 .method public static h(Landroid/content/Context;Lkotlin/jvm/functions/Function0;)V
     .locals 3
+    return-void
 
     const-string v0, "context"
 
@@ -934,6 +935,7 @@
 
 .method public static i(Landroid/content/Context;Ljava/lang/String;ZLkotlin/jvm/functions/Function1;)V
     .locals 8
+    return-void
 
     const-string v0, "context"
 
@@ -972,6 +974,7 @@
 
 .method public static j(Landroid/content/Context;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)V
     .locals 3
+    return-void
 
     const-string v0, "context"
 
@@ -998,6 +1001,7 @@
 
 .method public static k(Landroid/content/ContextWrapper;Ljava/util/List;Lkotlin/jvm/functions/Function0;)V
     .locals 3
+    return-void
 
     const-string v0, "context"
 
