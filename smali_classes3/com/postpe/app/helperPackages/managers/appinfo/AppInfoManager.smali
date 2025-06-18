@@ -70,41 +70,9 @@
 
     sput-object v0, Lcom/postpe/app/helperPackages/managers/appinfo/AppInfoManager;->e:Ljava/lang/String;
 
-    sget-object v0, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
-
-    const-string v1, "FINGERPRINT"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "generic"
-
-    const/4 v2, 0x0
-
-    invoke-static {v0, v1, v2}, Lkotlin/text/StringsKt;->n(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    sget-object v0, Landroid/os/Build;->PRODUCT:Ljava/lang/String;
-
-    const-string v1, "PRODUCT"
-
-    invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;->f(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v1, "sdk"
-
-    invoke-static {v0, v1, v2}, Lkotlin/text/StringsKt;->n(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
     :cond_0
-    const/4 v2, 0x1
-
-    :cond_1
-    sput-boolean v2, Lcom/postpe/app/helperPackages/managers/appinfo/AppInfoManager;->f:Z
+    const/4 v0, 0x0
+    sput-boolean v0, Lcom/postpe/app/helperPackages/managers/appinfo/AppInfoManager;->f:Z
 
     const-string v0, ""
 
