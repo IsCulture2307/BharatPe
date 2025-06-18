@@ -117,7 +117,8 @@
 # virtual methods
 .method public final a()Z
     .locals 15
-
+    const/4 v0, 0x0
+    return v0
     iget-object v0, p0, Lcom/bharatpe/rootdetection/LoanAppDetector;->b:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
