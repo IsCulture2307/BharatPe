@@ -51,7 +51,7 @@
     invoke-virtual {v1}, Lokhttp3/Response;->code()I
 
     move-result v2
-
+    
     const/16 v3, 0x191
 
     if-eq v2, v3, :cond_0
@@ -63,7 +63,6 @@
     const/16 v3, 0x193
 
     if-ne v2, v3, :cond_2
-    return-object v1
     :cond_0
     invoke-virtual {v0}, Lokhttp3/Request;->url()Lokhttp3/HttpUrl;
 
