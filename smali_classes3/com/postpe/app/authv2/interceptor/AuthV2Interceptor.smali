@@ -63,7 +63,7 @@
     const/16 v3, 0x193
 
     if-ne v2, v3, :cond_2
-
+    return-object v1
     :cond_0
     invoke-virtual {v0}, Lokhttp3/Request;->url()Lokhttp3/HttpUrl;
 
