@@ -51,7 +51,8 @@
 
 .method public static b()Z
     .locals 5
-
+    const/4 v0, 0x0
+    return v0
     sget-object v0, Landroid/os/Build;->HARDWARE:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;

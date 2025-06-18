@@ -270,7 +270,8 @@
 
 .method public static f()Z
     .locals 2
-
+    const/4 v0, 0x0
+    return v0
     sget-object v0, Landroid/os/Build;->PRODUCT:Ljava/lang/String;
 
     const-string v1, "sdk"
@@ -316,7 +317,8 @@
 
 .method public static g()Z
     .locals 4
-
+    const/4 v0, 0x0
+    return v0
     invoke-static {}, Lcom/google/firebase/crashlytics/internal/common/CommonUtils;->f()Z
 
     move-result v0
