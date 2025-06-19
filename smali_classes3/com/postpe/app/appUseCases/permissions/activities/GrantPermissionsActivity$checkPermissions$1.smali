@@ -63,7 +63,7 @@
 
     check-cast p1, Lcom/postpe/app/helperPackages/utils/GrantResult;
 
-    iget-boolean p1, p1, Lcom/postpe/app/helperPackages/utils/GrantResult;->c:Z
+    const/4 p1, 0x1
 
     const/4 v0, 0x0
 
