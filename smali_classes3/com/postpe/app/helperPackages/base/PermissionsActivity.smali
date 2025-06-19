@@ -220,6 +220,8 @@
     iget-boolean p3, p1, Lcom/postpe/app/helperPackages/utils/PermissionsManager;->c:Z
 
     iget-boolean v0, p1, Lcom/postpe/app/helperPackages/utils/PermissionsManager;->d:Z
+    
+    const/4 v4, 0x1 
 
     invoke-direct {p2, v4, p3, v0}, Lcom/postpe/app/helperPackages/utils/GrantResult;-><init>(ZZZ)V
 
