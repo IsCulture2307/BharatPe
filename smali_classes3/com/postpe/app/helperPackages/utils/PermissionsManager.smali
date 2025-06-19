@@ -106,8 +106,6 @@
 
 .method public static b([Ljava/lang/String;)Z
     .locals 5
-    const/4 v0, 0x1
-    return v0
     const-string v0, "permissions"
 
     invoke-static {p0, v0}, Lkotlin/jvm/internal/Intrinsics;->g(Ljava/lang/Object;Ljava/lang/String;)V
