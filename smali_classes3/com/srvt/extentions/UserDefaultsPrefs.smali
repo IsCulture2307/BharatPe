@@ -1222,7 +1222,8 @@
 
 .method public final getDeviceBindingStatus$SrvtUniversalSDK_POSTPAY_PRODCL_1_8Release()Z
     .locals 9
-
+    const/4 v0, 0x1
+    return v0
     invoke-direct {p0}, Lcom/srvt/extentions/UserDefaultsPrefs;->getSharedPrefs()Landroid/content/SharedPreferences;
 
     move-result-object v0
