@@ -330,5 +330,6 @@
     sget-object v2, Lcom/postpe/app/helperPackages/security/device/emulatordetection/DeviceState$NotEmulator;->a:Lcom/postpe/app/helperPackages/security/device/emulatordetection/DeviceState$NotEmulator;
 
     :cond_7
-    return-object v2
+    sget-object v0, Lcom/postpe/app/helperPackages/security/device/emulatordetection/DeviceState$NotEmulator;->a:Lcom/postpe/app/helperPackages/security/device/emulatordetection/DeviceState$NotEmulator;
+    return-object v0
 .end method

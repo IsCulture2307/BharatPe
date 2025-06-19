@@ -110,9 +110,8 @@
 
     iget-object v3, p0, Lcom/postpe/app/appUseCases/common/SplashActivity$onCreate$1$1;->d:Lcom/postpe/app/helperPackages/security/device/emulatordetection/DeviceState;
 
-    instance-of v4, v3, Lcom/postpe/app/helperPackages/security/device/emulatordetection/DeviceState$Emulator;
-
-    if-eqz v4, :cond_3
+    const/4 v4, 0x0
+    goto :cond_3
 
     check-cast v3, Lcom/postpe/app/helperPackages/security/device/emulatordetection/DeviceState$Emulator;
 

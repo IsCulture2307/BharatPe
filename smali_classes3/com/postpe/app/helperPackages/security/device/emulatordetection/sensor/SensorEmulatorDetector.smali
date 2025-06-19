@@ -67,7 +67,9 @@
 # virtual methods
 .method public final a(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
     .locals 2
+    sget-object v0, Lcom/postpe/app/helperPackages/security/device/emulatordetection/DeviceState$NotEmulator;->a:Lcom/postpe/app/helperPackages/security/device/emulatordetection/DeviceState$NotEmulator;
 
+    return-object v0
     iget-object p1, p0, Lcom/postpe/app/helperPackages/security/device/emulatordetection/sensor/SensorEmulatorDetector;->b:Lkotlin/Lazy;
 
     invoke-interface {p1}, Lkotlin/Lazy;->getValue()Ljava/lang/Object;
