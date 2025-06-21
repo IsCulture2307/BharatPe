@@ -1,5 +1,4 @@
 Java.perform(() => {
-  const ResponseBody = Java.use("okhttp3.ResponseBody");
   const Buffer = Java.use("okio.Buffer");
   const Charset = Java.use("java.nio.charset.Charset");
   const StandardCharsets = Java.use("java.nio.charset.StandardCharsets");
@@ -8,6 +7,7 @@ Java.perform(() => {
   const JavaLangLong = Java.use("java.lang.Long");
   const RealCall = Java.use("okhttp3.internal.connection.RealCall");
   const CallbackInterface = Java.use("okhttp3.Callback");
+  const ResponseBody = Java.use("okhttp3.ResponseBody");
   const Response = Java.use("okhttp3.Response");
   const RequestBuilder = Java.use("okhttp3.Request$Builder");
 
@@ -65,6 +65,7 @@ Java.perform(() => {
         const headers = request.headers();
 
         if (isDuplicateUrl(url) || isIgnoredUrl(url)) return request;
+        // if (!url.includes("/upi/home/detail")) return request;
 
         logWithTime("=== 🚀 HTTP Request ===");
         logWithTime("URL: " + url);
@@ -125,7 +126,12 @@ Java.perform(() => {
           // logWithTime("URL: " + url);
           logWithTime("Method: " + method);
         }
+        // if (!url.includes("/upi/home/detail")) return request;
 
+        const headers = request.headers();
+        for (let i = 0; i < headers.size(); i++) {
+          console.log(`[Request Header] ${headers.name(i)}: ${headers.value(i)}`);
+        }
         const response = this.intercept(chain);
 
         try {
@@ -161,133 +167,8 @@ Java.perform(() => {
       logWithTime("⚠️ Cannot hook Interceptor.intercept(): " + e);
     }
 
-    // ========== Hook okhttp3.internal.connection.RealCall ==========
-    // const RealCall = Java.use("okhttp3.internal.connection.RealCall");
-    // const Callback = Java.use("okhttp3.Callback");
-
-    // RealCall.enqueue.implementation = function (callback) {
-    //   const url = this.request().url().toString();
-    //   // console.log("[hook RealCall.enqueue] 请求 URL: " + url);
-
-    //   const WrappedCallback = Java.registerClass({
-    //     name: "com.frida.WrappedCallback",
-    //     implements: [Callback],
-    //     fields: {
-    //       originalCallback: "okhttp3.Callback",
-    //     },
-    //     methods: {
-    //       onFailure: function (call, ioe) {
-    //         console.log("[WrappedCallback] onFailure: " + ioe);
-    //         this.originalCallback.onFailure(call, ioe);
-    //       },
-    //       onResponse: function (call, response) {
-    //         try {
-    //           console.log("[WrappedCallback] onResponse: " + call.request().url().toString());
-
-    //           const code = response.code();
-    //           console.log("响应码: " + code);
-
-    //           const responseBody = response.body();
-
-    //           console.log("响应体长度: " + responseBody.contentLength());
-
-    //           if (responseBody.contentLength() == 0 || responseBody == null) {
-    //             console.log("响应体长度为0，直接返回");
-    //             return;
-    //           }
-
-    //           try {
-    //             const source = responseBody.source();
-    //             source.request(Java.use("java.lang.Long").MAX_VALUE.value); // 读取所有数据
-    //             const buffer = source.buffer();
-    //             console.log(
-    //               "可用 Buffer 方法:",
-    //               buffer.clone().$classWrapper.$methods.map((m) => m.name)
-    //             );
-
-    //             const byteArray = buffer.clone().readByteArray(buffer.size());
-
-    //             const StringCls = Java.use("java.lang.String");
-    //             const CharsetCls = Java.use("java.nio.charset.Charset");
-    //             const utf8Charset = CharsetCls.forName("UTF-8");
-
-    //             const bodyStr = StringCls.$new(byteArray, utf8Charset);
-    //             logWithTime("响应体字符串（byteArray→String）:", bodyStr);
-    //           } catch (e) {
-    //             console.log("读取响应体(byteArray→String) 异常: " + e);
-    //           }
-    //         } catch (e) {
-    //           console.log("[WrappedCallback] onResponse 异常: " + e);
-    //         }
-    //         // fallback
-    //         this.originalCallback.onResponse(call, response);
-    //       },
-    //     },
-    //   });
-
-    //   const wrapped = WrappedCallback.$new();
-    //   wrapped.originalCallback.value = callback;
-
-    //   return this.enqueue.call(this, wrapped);
-    // };
-
     console.log("[*] okhttp3 RealCall.enqueue hook 完成");
   } catch (err) {
     logWithTime("🔥 Top-level Hook Error:", err);
   }
-});
-Java.perform(() => {
-  const Interceptor = Java.use("okhttp3.Interceptor");
-  const RequestBody = Java.use("okhttp3.RequestBody");
-  const Buffer = Java.use("okio.Buffer");
-
-  Interceptor.intercept.implementation = function (chain) {
-    const request = chain.request();
-
-    // 打印请求URL
-    console.log("[*] Request URL:", request.url().toString());
-
-    // 打印请求头
-    const headers = request.headers();
-    for (let i = 0; i < headers.size(); i++) {
-      console.log(`[Request Header] ${headers.name(i)}: ${headers.value(i)}`);
-    }
-
-    // 打印请求体（如果存在且能读取）
-    const body = request.body();
-    if (body !== null) {
-      try {
-        const buffer = Buffer.$new();
-        body.writeTo(buffer);
-        const contentType = body.contentType();
-        const charset = contentType ? contentType.charset() : Java.use("java.nio.charset.StandardCharsets").UTF_8.value;
-        const bodyString = buffer.readString(charset);
-        console.log("[*] Request Body:", bodyString);
-      } catch (e) {
-        console.log("[!] Failed to read request body:", e.message);
-      }
-    } else {
-      console.log("[*] Request Body: null");
-    }
-
-    // 执行原始请求，获取响应
-    const response = this.intercept.call(this, chain);
-
-    // 打印响应体
-    try {
-      const responseBody = response.body();
-      const source = responseBody.source();
-      source.request(java.lang.Long.MAX_VALUE); // Buffer the entire body.
-      const buffer = source.buffer();
-      const contentType = responseBody.contentType();
-      const charset = contentType ? contentType.charset() : Java.use("java.nio.charset.StandardCharsets").UTF_8.value;
-
-      const bodyString = buffer.clone().readString(charset);
-      console.log("[*] Response Body:", bodyString);
-    } catch (e) {
-      console.log("[!] Failed to read response body:", e.message);
-    }
-
-    return response;
-  };
 });
