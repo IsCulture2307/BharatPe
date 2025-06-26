@@ -1657,7 +1657,7 @@
 
 .method public final G()V
     .locals 8
-
+    return-void
     sget-object v0, Lcom/postpe/app/helperPackages/base/PostPeApplication;->d:Lcom/postpe/app/helperPackages/base/PostPeApplication;
 
     invoke-static {}, Lcom/postpe/app/helperPackages/base/PostPeApplication$Companion;->a()Landroid/content/Context;

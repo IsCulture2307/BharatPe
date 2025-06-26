@@ -54,7 +54,7 @@
 # virtual methods
 .method public final a(Ljava/lang/Object;)V
     .locals 2
-
+    const/4 v1, 0x1
     check-cast p1, Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z

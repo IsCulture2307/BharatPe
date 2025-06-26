@@ -68,12 +68,12 @@
 # virtual methods
 .method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
-
     check-cast p1, Ljava/lang/Integer;
 
     check-cast p2, Ljava/lang/String;
 
     check-cast p3, Ljava/lang/Boolean;
+    const/4 p3, 0x1
 
     invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
 

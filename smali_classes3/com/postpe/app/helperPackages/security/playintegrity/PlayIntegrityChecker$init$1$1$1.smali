@@ -76,7 +76,7 @@
     check-cast p2, Ljava/lang/Integer;
 
     check-cast p3, Ljava/lang/String;
-
+    const/4 p1, 0x1
     new-instance v0, Lkotlin/Triple;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
