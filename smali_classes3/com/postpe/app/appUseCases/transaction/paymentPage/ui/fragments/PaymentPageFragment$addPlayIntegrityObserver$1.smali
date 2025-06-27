@@ -55,11 +55,12 @@
 .method public final a(Ljava/lang/Object;)V
     .locals 2
     const/4 v1, 0x1
-    check-cast p1, Ljava/lang/Boolean;
+    const/4 p1, 0x1
+    #check-cast p1, Ljava/lang/Boolean;
 
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    #invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result p1
+    #move-result p1
 
     sget v0, Lcom/postpe/app/appUseCases/transaction/paymentPage/ui/fragments/PaymentPageFragment;->Y:I
 

@@ -72,12 +72,12 @@
 
     check-cast p2, Ljava/lang/String;
 
-    check-cast p3, Ljava/lang/Boolean;
+    #check-cast p3, Ljava/lang/Boolean;
     const/4 p3, 0x1
 
-    invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
+    #invoke-virtual {p3}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result p3
+    #move-result p3
 
     check-cast p4, Ljava/lang/String;
 

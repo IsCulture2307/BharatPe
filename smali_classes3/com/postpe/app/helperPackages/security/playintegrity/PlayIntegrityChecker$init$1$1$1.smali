@@ -67,16 +67,16 @@
 .method public final invoke(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    check-cast p1, Ljava/lang/Boolean;
+    #check-cast p1, Ljava/lang/Boolean;
 
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
+    #invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    move-result p1
-
+    #move-result p1
+    const/4 p1, 0x1
     check-cast p2, Ljava/lang/Integer;
 
     check-cast p3, Ljava/lang/String;
-    const/4 p1, 0x1
+
     new-instance v0, Lkotlin/Triple;
 
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
